@@ -132,6 +132,7 @@ This project is licensed under the MIT License. Feel free to modify and distribu
 
 ---
 **Maintained by:** Jolayemi  
+
 **GitHub:** [Link](https://github.com/imjolayemi/)
 
 **Contact:** imlandlord1@gmail.com / njolayemi@gmail.com
