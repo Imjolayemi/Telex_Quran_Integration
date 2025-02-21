@@ -8,7 +8,7 @@
         "app_description": "A bot that sends a daily Quranic verse with translation.",
         "app_logo": "https://iili.io/JqhkJOG.png",
         "app_name": "Daily Quranic Verse Bot",
-        "app_url": "http://localhost:8000/quranic_verse_api.php",
+        "app_url": "https://telex-quran-integration.onrender.com/quranic_verse_api.php",
         "background_color": "#006400"
       },
       "integration_category": "Content & Information",
@@ -53,7 +53,7 @@
           "default": "No"
         }
       ],
-      "tick_url": "http://localhost:8000/quranic_verse_api.php/tick",
+      "tick_url": "https://telex-quran-integration.onrender.com/quranic_verse_api.php/tick",
       "target_url": ""
     }
   }
