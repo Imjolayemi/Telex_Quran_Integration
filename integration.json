@@ -40,17 +40,28 @@
           "default": "0 9 * * *"
         },
         {
-          "label": "Translation",
-          "type": "dropdown",
+          "label": "Surah Name",
+          "type": "text",
           "required": true,
-          "default": "Muhammad Asad",
-          "options": ["Muhammad Asad", "Sahih International", "Yusuf Ali"]
+          "default": ""
         },
         {
-          "label": "Include Tafsir",
-          "type": "checkbox",
-          "required": false,
-          "default": "No"
+          "label": "Ayah Number",
+          "type": "number",
+          "required": true,
+          "default": "0"
+        },
+        {
+          "label": "Arabic",
+          "type": "text",
+          "required": true,
+          "default": ""
+        },
+        {
+          "label": "English Translation",
+          "type": "dropdown",
+          "required": true,
+          "default": "Muhammad Asad"
         }
       ],
       "tick_url": "https://telex-quran-integration.onrender.com/index.php",
