@@ -1,5 +1,5 @@
-
 <?php
+header('Content-Type: application/json; charset=UTF-8');
 
 // Specify the Ayah number you want (random or specific)
 $ayahNumber = 2; // You can change this to any Ayah number
@@ -44,7 +44,6 @@ $output = [
 ];
 
 // Set JSON response headers
-header('Content-Type: application/json; charset=UTF-8');
 echo json_encode($output, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 
 ?>
