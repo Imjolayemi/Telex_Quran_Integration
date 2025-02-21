@@ -11,7 +11,7 @@
         "app_url": "https://telex-quran-integration.onrender.com/",
         "background_color": "#006400"
       },
-      "integration_category": "Content & Information",
+      "integration_category": "Communication & Collaboration",
       "integration_type": "interval",
       "is_active": true,
       "output": [
