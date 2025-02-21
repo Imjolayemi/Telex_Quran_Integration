@@ -2,7 +2,7 @@
 header('Content-Type: application/json; charset=UTF-8');
 
 // Specify the Ayah number you want (random or specific)
-$ayahNumber = 2; // You can change this to any Ayah number
+$ayahNumber = rand(1, 6325); // You can change this to any Ayah number
 
 // API URLs for Arabic and English translations
 $arabicApiUrl = "https://api.alquran.cloud/v1/ayah/$ayahNumber/quran-uthmani"; // Arabic (Uthmani script)
