@@ -50,7 +50,7 @@
           "default": "0"
         },
         {
-          "label": "Arabic",
+          "label": "Arabic Text",
           "type": "text",
           "required": true,
           "default": ""
