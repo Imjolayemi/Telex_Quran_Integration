@@ -1,8 +1,20 @@
 <?php
 
 header('Content-Type: application/json; charset=UTF-8');
-// Allow requests from any origin
-header("Access-Control-Allow-Origin: *");
+
+// Allow requests from any origin + explicitly allow Telex
+$allowedOrigins = ['https://telex.im','https://telex.im',
+'https://*.telex.im',
+'http://telextest.im',
+'http://staging.telextest.im'];
+$origin = $_SERVER['HTTP_ORIGIN'] ?? '*';
+
+if (in_array($origin, $allowedOrigins)) {
+    header("Access-Control-Allow-Origin: $origin");
+} else {
+    header("Access-Control-Allow-Origin: *");
+}
+
 header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
 
