@@ -14,12 +14,7 @@
       "integration_category": "Communication & Collaboration",
       "integration_type": "interval",
       "is_active": true,
-      "output": [
-        {
-          "label": "Telex Channel",
-          "value": true
-        }
-      ],
+  
       "key_features": [
         "Fetches a new Quranic verse every day.",
         "Includes Arabic text and translation.",
@@ -32,6 +27,8 @@
           "display_name": "Quranic Verse Bot"
         }
       },
+      "website": "https://telex-quran-integration.onrender.com/integration.json",
+      "author": "Jolayemi",
       "settings": [
         {
           "label": "interval",
@@ -64,7 +61,7 @@
           "default": "Muhammad Asad"
         }
       ],
-      "tick_url": "https://telex-quran-integration.onrender.com/index.php",
+      "tick_url": "https://telex-quran-integration.onrender.com/tick",
       "target_url": ""
     }
   }

@@ -1,4 +1,5 @@
 <?php
+
 header('Content-Type: application/json; charset=UTF-8');
 
 // Specify the Ayah number you want (random or specific)
