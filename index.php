@@ -1,4 +1,22 @@
 <?php
+// Allow from any origin
+header("Access-Control-Allow-Origin: *");
+
+// Allow specific HTTP methods
+header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
+
+// Allow specific headers
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
+
+// Handle preflight requests
+if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+    // Return only the headers and not the content
+    header("HTTP/1.1 200 OK");
+    exit();
+}
+
+// ...
+
 header('Content-Type: application/json; charset=UTF-8');
 
 // Specify the Ayah number you want (random or specific)
