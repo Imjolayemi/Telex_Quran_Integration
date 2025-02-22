@@ -91,3 +91,74 @@ echo $response;
     }
   }
   
+
+
+
+  <!-- Alfa habib json -->
+
+  {
+  "data": {
+    "date": {
+      "created_at": "2025-02-19",
+      "updated_at": "2025-02-19"
+    },
+    "descriptions": {
+      "app_name": "AWS EC2 INSTANCE CPU Monitor",
+      "app_description": "Monitors EC2 CPU usage and sends alerts",
+      "app_url": "https://hng12-stage3-ec2-cpu-usage-monitoring.onrender.com",
+      "app_logo": "https://res.cloudinary.com/naijaceo/image/upload/v1595027227/3d_logo_maker_bonus_ssqd0g.png",
+      "background_color": "#ffffff"
+    },
+    "integration_category": "Monitoring & Logging",
+    "integration_type": "interval",
+    "is_active": true,
+    "key_features": [
+      "Automated CPU monitoring for AWS EC2 instances",
+      "Sends SMS alerts when CPU usage exceeds threshold",
+      "Configurable monitoring interval",
+      "Seamless AWS IAM role authentication"
+    ],
+    "permissions": {
+      "monitoring_user": {
+        "always_online": true,
+        "display_name": "Performance Monitor"
+      }
+    },
+    "website": "https://hng12-stage3-ec2-cpu-usage-monitoring.onrender.com/interval-integration.json",
+    "author": "YoungOH",
+    "settings": [
+      {
+        "label": "AWS-Account-ID",
+        "type": "text",
+        "required": true,
+        "default": ""
+      },
+      {
+        "label": "IAM-Role-Name",
+        "type": "text",
+        "required": true,
+        "default": ""
+      },
+      {
+        "label": "EC2-Instance-ID",
+        "type": "text",
+        "required": true,
+        "default": ""
+      },
+      {
+        "label": "Return-URL",
+        "type": "text",
+        "required": true,
+        "default": ""
+      },
+      {
+        "label": "interval",
+        "type": "text",
+        "required": true,
+        "default": "*/5 * * * *"
+      }
+    ],
+    "tick_url": "https://hng12-stage3-ec2-cpu-usage-monitoring.onrender.com/tick",
+    "target_url": ""
+  }
+}
