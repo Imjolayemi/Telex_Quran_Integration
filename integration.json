@@ -11,7 +11,7 @@
         "app_url": "https://telex-quran-integration.onrender.com",
         "background_color": "#006400"
       },
-      "integration_category": "Communication & Collaboration",
+      "integration_category": "Monitoring & Logging",
       "integration_type": "interval",
       "is_active": true,
   
@@ -32,31 +32,31 @@
       "settings": [
   
         {
-          "label": "Ayah Global Number",
+          "label": "Ayah_Global_Number",
           "type": "number",
           "required": true,
           "default": "0"
         },
         {
-          "label": "Surah Name",
+          "label": "Surah_Name",
           "type": "text",
           "required": true,
           "default": ""
         },
         {
-          "label": "Ayah Number in Surah",
+          "label": "Ayah_Number_in_Surah",
           "type": "number",
           "required": true,
           "default": "0"
         },
         {
-          "label": "Arabic Text",
+          "label": "Arabic_Text",
           "type": "text",
           "required": true,
           "default": ""
         },
         {
-          "label": "English Translation",
+          "label": "English_Translation",
           "type": "dropdown",
           "required": true,
           "default": "Muhammad Asad"
@@ -65,7 +65,7 @@
           "label": "interval",
           "type": "text",
           "required": true,
-          "default": "0 9 * * *"
+          "default": "*/5 * * * *"
         }
       ],
       "tick_url": "https://telex-quran-integration.onrender.com/tick",
