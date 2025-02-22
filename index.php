@@ -3,13 +3,17 @@
 header('Content-Type: application/json; charset=UTF-8');
 
 // Allow requests from any origin + explicitly allow Telex
-$allowedOrigins = ['https://telex.im','https://telex.im',
-'https://*.telex.im',
-'http://telextest.im',
-'http://staging.telextest.im'];
+$allowedOrigins = [
+    'https://telex.im',
+    'https://*.telex.im',
+    'http://telextest.im',
+    'http://staging.telextest.im'
+];
+
 $origin = $_SERVER['HTTP_ORIGIN'] ?? '*';
 
-if (in_array($origin, $allowedOrigins)) {
+// Allow only specified Telex domains
+if (in_array($origin, $allowedOrigins) || fnmatch('https://*.telex.im', $origin)) {
     header("Access-Control-Allow-Origin: $origin");
 } else {
     header("Access-Control-Allow-Origin: *");
@@ -49,7 +53,13 @@ function fetch_quran_ayah($url) {
         return null; // Return null if API request fails
     }
 
-    return json_decode($response, true);
+    // Check if response is already JSON
+    $decoded = json_decode($response, true);
+    if (json_last_error() === JSON_ERROR_NONE) {
+        return $decoded; // Return decoded JSON instead of a string
+    }
+
+    return null;
 }
 
 // Fetch Arabic and English translations
@@ -79,7 +89,11 @@ $output = [
     "source" => "Al-Quran Cloud API"
 ];
 
-// Output JSON response
-echo json_encode($output, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+// Prevent double serialization by checking if output is already JSON
+if (!is_string($output) || json_decode($output) === null) {
+    echo json_encode($output, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+} else {
+    echo $output;
+}
 
 ?>
