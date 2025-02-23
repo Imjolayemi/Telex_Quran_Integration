@@ -29,7 +29,7 @@
           "label": "Ayah_Global_Number",
           "type": "number",
           "required": true,
-          "default": "0"
+          "default": ""
         },
         {
           "label": "Surah_Name",
@@ -41,7 +41,7 @@
           "label": "Ayah_Number_in_Surah",
           "type": "number",
           "required": true,
-          "default": "0"
+          "default": ""
         },
         {
           "label": "Arabic_Text",
@@ -59,7 +59,7 @@
           "label": "interval",
           "type": "text",
           "required": true,
-          "default": "*/5 * * * *"
+          "default": "* * * * *"
         }
       ],
       "tick_url": "https://telex-quran-integration.onrender.com/tick",
