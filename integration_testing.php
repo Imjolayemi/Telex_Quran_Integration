@@ -26,12 +26,12 @@ $arabicText = $quranData["arabic"];
 $englishTranslation = $quranData["english_translation"];
 
 // Step 2: Send Data to Telex Channel
-$telexWebhookUrl = "https://ping.telex.im/v1/webhooks/channel-id";
+$telexWebhookUrl = "https://ping.telex.im/v1/webhooks/01952f84-0017-76a5-94a9-b231fcfe2d4e";
 
-$message = "📖 *Quran Verse of the Day*\n\n"
-         . "📜 Surah: *$surah* (Ayah $ayahInSurah)\n"
-         . "📖 Arabic: $arabicText\n"
-         . "📚 Translation: \"$englishTranslation\"\n";
+$message = " *Quran Verse of the Day*\n\n"
+         . " Surah: *$surah* (Ayah $ayahInSurah)\n"
+         . " Arabic: $arabicText\n"
+         . " Translation: \"$englishTranslation\"\n";
 
 $data = array(
     "event_name" => "daily_quran_verse",
