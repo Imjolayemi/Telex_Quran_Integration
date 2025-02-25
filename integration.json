@@ -11,7 +11,7 @@
         "app_url": "https://telex-quran-integration.onrender.com",
         "background_color": "#ffffff"
       },
-      "integration_type": "interval and monitoring",
+      "integration_type": "interval",
       "integration_category": "Monitoring & Logging",
       "is_active": true,
   
