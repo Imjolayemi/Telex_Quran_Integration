@@ -2,23 +2,25 @@
 
 header('Content-Type: application/json; charset=UTF-8');
 
-// Allow requests from any origin + explicitly allow Telex
-$allowedOrigins = [
-    'https://telex.im',
-    'https://*.telex.im',
-    'http://telextest.im',
-    'http://staging.telextest.im'
-];
+// // Allow requests from any origin + explicitly allow Telex
+// $allowedOrigins = [
+//     'https://telex.im',
+//     'https://*.telex.im',
+//     'http://telextest.im',
+//     'http://staging.telextest.im'
+// ];
 
-$origin = $_SERVER['HTTP_ORIGIN'] ?? '*';
+// $origin = $_SERVER['HTTP_ORIGIN'] ?? '*';
 
-// Allow only specified Telex domains
-if (in_array($origin, $allowedOrigins) || fnmatch('https://*.telex.im', $origin)) {
-    header("Access-Control-Allow-Origin: $origin");
-} else {
-    header("Access-Control-Allow-Origin: *");
-}
+// // Allow only specified Telex domains
+// if (in_array($origin, $allowedOrigins) || fnmatch('https://*.telex.im', $origin)) {
+//     header("Access-Control-Allow-Origin: $origin");
+// } else {
+//     header("Access-Control-Allow-Origin: *");
+// }
 
+header("Access-Control-Allow-Origin: https://telex.im");
+header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
 
