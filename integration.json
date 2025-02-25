@@ -21,45 +21,14 @@
         "Supports multiple translations.",
         "Automated delivery to Telex channels."
       ],
-      "website": "https://telex-quran-integration.onrender.com/integration.json",
+  
       "author": "Jolayemi",
       "settings": [
-  
-        {
-          "label": "Ayah_Global_Number",
-          "type": "number",
-          "required": true,
-          "default": ""
-        },
-        {
-          "label": "Surah_Name",
-          "type": "text",
-          "required": true,
-          "default": ""
-        },
-        {
-          "label": "Ayah_Number_in_Surah",
-          "type": "number",
-          "required": true,
-          "default": ""
-        },
-        {
-          "label": "Arabic_Text",
-          "type": "text",
-          "required": true,
-          "default": ""
-        },
-        {
-          "label": "English_Translation",
-          "type": "dropdown",
-          "required": true,
-          "default": "Muhammad Asad"
-        },
         {
           "label": "interval",
           "type": "text",
           "required": true,
-          "default": "* * * * *"
+          "default": "* 8 * * *"
         }
       ],
       "tick_url": "https://telex-quran-integration.onrender.com/tick",
