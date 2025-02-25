@@ -62,7 +62,8 @@
           "default": "* * * * *"
         }
       ],
-      "tick_url": "https://telex-quran-integration.onrender.com/tick"
+      "tick_url": "https://telex-quran-integration.onrender.com/tick",
+      "target_url": ""
     }
   }
   
